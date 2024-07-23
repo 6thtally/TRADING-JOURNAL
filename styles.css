@@ -1,0 +1,208 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    color: #00aaff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.quote-section {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.quote-section h1 {
+    font-size: 2em;
+    color: #00aaff;
+}
+
+.quote-section button {
+    background-color: #001f3f;
+    color: #00aaff;
+    border: 2px solid #00aaff;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 10px;
+}
+
+.quote-section button:hover {
+    background-color: #00aaff;
+    color: #001f3f;
+}
+
+#quote {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h1, h2, h3 {
+    color: #00aaff;
+}
+
+h2 {
+    border-bottom: 1px solid #00aaff;
+    padding-bottom: 10px;
+}
+
+.checklist label, ul {
+    display: block;
+    margin: 10px 0;
+}
+
+.textbox, .large-textarea {
+    margin: 20px 0;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #00aaff;
+    padding: 10px;
+    resize: vertical;
+    margin-bottom: 10px;
+}
+
+.large-textarea {
+    height: 200px;
+}
+
+input[type="file"] {
+    display: block;
+    margin-top: 10px;
+    background-color: #001f3f;
+    color: #00aaff;
+    border: 2px solid #00aaff;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+input[type="file"]:hover {
+    background-color: #00aaff;
+    color: #001f3f;
+}
+
+.screenshot {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-top: 10px;
+    display: none;
+}
+
+.buttons {
+    text-align: center;
+}
+
+button {
+    background-color: #001f3f;
+    color: #00aaff;
+    border: 2px solid #00aaff;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: #00aaff;
+    color: #001f3f;
+}
+
+footer {
+    text-align: center;
+    background-color: #001f3f;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 0;
+    color: #00aaff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .logo {
+        font-size: 1.2em;
+    }
+
+    nav ul li {
+        margin-left: 15px;
+    }
+
+    .quote-section h1 {
+        font-size: 1.5em;
+    }
+
+    button {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        padding: 10px;
+    }
+
+    .logo {
+        font-size: 1em;
+    }
+
+    nav ul li {
+        margin-left: 10px;
+    }
+
+    .quote-section h1 {
+        font-size: 1.2em;
+    }
+
+    button {
+        font-size: 1em;
+        padding: 8px 10px;
+    }
+}

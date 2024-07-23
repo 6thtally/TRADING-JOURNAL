@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trading Plan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">6th tally</div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Playbook</a></li>
+                <li><a href="#">Rules</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="quote-section">
+            <h1>Quote of the Day</h1>
+            <button onclick="generateQuote()">Generate</button>
+            <p id="quote"></p>
+        </section>
+
+        <section>
+            <h1>TRADING JOURNAL</h1>
+            <h2>Pre Market Routine Checklist</h2>
+            <div class="checklist">
+                <label><input type="checkbox"> Check Economic Data</label>
+                <label><input type="checkbox"> Drink Water</label>
+                <label><input type="checkbox"> Pray</label>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Watch List</h2>
+            <ul>
+                <li>NAS100</li>
+                <li>US30</li>
+                <li>S&P500</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>Today's Game Plan</h2>
+            <div class="textbox">
+                <h3>NASDAQ:</h3>
+                <textarea></textarea>
+            </div>
+            <div class="textbox">
+                <h3>S&P500:</h3>
+                <textarea></textarea>
+            </div>
+            <div class="textbox">
+                <h3>US30:</h3>
+                <textarea></textarea>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Pre-Market Analysis</h2>
+            <div class="textbox">
+                <h3>NASDAQ:</h3>
+                <textarea></textarea>
+                <input type="file" accept="image/*" onchange="previewImage(event, 'nasdaq-pre')">
+                <img id="nasdaq-pre" class="screenshot" src="" alt="">
+            </div>
+            <div class="textbox">
+                <h3>S&P500:</h3>
+                <textarea></textarea>
+                <input type="file" accept="image/*" onchange="previewImage(event, 'sp500-pre')">
+                <img id="sp500-pre" class="screenshot" src="" alt="">
+            </div>
+            <div class="textbox">
+                <h3>US30:</h3>
+                <textarea></textarea>
+                <input type="file" accept="image/*" onchange="previewImage(event, 'us30-pre')">
+                <img id="us30-pre" class="screenshot" src="" alt="">
+            </div>
+        </section>
+        
+        <section>
+            <h2>Post-Market Analysis</h2>
+            <div class="textbox">
+                <h3>NASDAQ:</h3>
+                <textarea></textarea>
+                <input type="file" accept="image/*" onchange="previewImage(event, 'nasdaq-post')">
+                <img id="nasdaq-post" class="screenshot" src="" alt="">
+            </div>
+            <div class="textbox">
+                <h3>S&P500:</h3>
+                <textarea></textarea>
+                <input type="file" accept="image/*" onchange="previewImage(event, 'sp500-post')">
+                <img id="sp500-post" class="screenshot" src="" alt="">
+            </div>
+            <div class="textbox">
+                <h3>US30:</h3>
+                <textarea></textarea>
+                <input type="file" accept="image/*" onchange="previewImage(event, 'us30-post')">
+                <img id="us30-post" class="screenshot" src="" alt="">
+            </div>
+        </section>
+        
+        <section>
+            <h2>Lesson</h2>
+            <textarea class="large-textarea"></textarea>
+        </section>
+        
+        <div class="buttons">
+            <button>PLAY BOOK</button>
+            <button>RULES</button>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 6th Tally, 2024</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
